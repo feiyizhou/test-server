@@ -5,4 +5,4 @@ build:
 	go build -o server main.go
 
 docker: build
-	docker build -t test-server:latest -f Dockerfile .
+	docker build -t feiyizhou/test-server:latest -f Dockerfile .
