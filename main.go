@@ -19,6 +19,7 @@ func main() {
 		WriteTimeout: 10 * time.Second,
 	}
 
+	log.Println("Server started on port 8080")
 	if err := server.ListenAndServe(); err != nil {
 		log.Fatalf("Server startup failed: %v", err)
 	}
